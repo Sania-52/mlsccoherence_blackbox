@@ -44,13 +44,13 @@ def gather_info():
         return name, phone_number, laptop_make_model, model_number, availability
     else:
         speak("Alright. Your issue will be noted. Have a good day!")
-        return None
+        return name, phone_number, laptop_make_model, model_number, availability
 
 def create_ticket(name, phone_number, laptop_make_model, model_number, availability):
     ticket_info = f"Name: {name}\nPhone Number: {phone_number}\nLaptop Make and Model: {laptop_make_model}\nModel Number: {model_number}\nAvailability for Call: {availability}\n"
     return ticket_info
 
-def customer_assist():
+def jarvis():
     speak("Hello, I am your Virtual Assistant. How can I assist you today?")
     while True:
         query = listen()
@@ -81,4 +81,4 @@ def customer_assist():
         else:
             speak("Sorry, I didn't understand. Can you please repeat or ask something else?")
 
-customer_assist()
+jarvis()
