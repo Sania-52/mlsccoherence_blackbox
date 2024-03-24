@@ -1,3 +1,3 @@
-# mlsccoherence_blackbox
+# mlsccoherence_BlackbBox
 
-Domain - Ai/Ml
+Domain - AI / ML
